@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+
+    <File name="MyFile" fileName="logs/app.log">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+    </File>
+  </Appenders>
+
+  <Loggers>
+    <!-- Optional: explicitly capture your packages at INFO or TRACE -->
+    <Logger name="base" level="info" additivity="false">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="MyFile"/>
+    </Logger>
+    <Logger name="pages" level="info" additivity="false">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="MyFile"/>
+    </Logger>
+    <Logger name="utils" level="info" additivity="false">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="MyFile"/>
+    </Logger>
+
+    <!-- Now catch everything else at INFO too -->
+    <Root level="info">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="MyFile"/>
+    </Root>
+  </Loggers>
+</Configuration>
