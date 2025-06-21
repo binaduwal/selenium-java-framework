@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-20T22:13:40 NPT" name="Default suite" finished-at="2025-06-20T22:14:10 NPT" duration-ms="30347">
+  <suite started-at="2025-06-21T21:31:31 NPT" name="Default suite" finished-at="2025-06-21T21:31:55 NPT" duration-ms="24125">
     <groups>
     </groups>
-    <test started-at="2025-06-20T22:13:40 NPT" name="Default test" finished-at="2025-06-20T22:14:10 NPT" duration-ms="30347">
+    <test started-at="2025-06-21T21:31:31 NPT" name="Default test" finished-at="2025-06-21T21:31:55 NPT" duration-ms="24125">
       <class name="test.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginTest@185a6e9]" started-at="2025-06-20T22:13:42 NPT" name="setUp" finished-at="2025-06-20T22:13:59 NPT" duration-ms="17150" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginTest@79079097]" started-at="2025-06-21T21:31:33 NPT" name="setUp" finished-at="2025-06-21T21:31:43 NPT" duration-ms="9813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testValidLogin(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@185a6e9]" started-at="2025-06-20T22:13:59 NPT" name="testValidLogin" data-provider="LoginData" finished-at="2025-06-20T22:14:00 NPT" duration-ms="1116" status="PASS">
+        <test-method signature="testValidLogin(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@79079097]" started-at="2025-06-21T21:31:43 NPT" name="testValidLogin" data-provider="LoginData" finished-at="2025-06-21T21:31:44 NPT" duration-ms="1358" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +27,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@185a6e9]" started-at="2025-06-20T22:14:00 NPT" name="tearDown" finished-at="2025-06-20T22:14:01 NPT" duration-ms="579" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:test.LoginTest@79079097]" started-at="2025-06-21T21:31:44 NPT" name="tearDown" finished-at="2025-06-21T21:31:45 NPT" duration-ms="1001" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=LoginTest.testValidLogin(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@79079097] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginTest@185a6e9]" started-at="2025-06-20T22:14:01 NPT" name="setUp" finished-at="2025-06-20T22:14:04 NPT" duration-ms="3660" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginTest@79079097]" started-at="2025-06-21T21:31:45 NPT" name="setUp" finished-at="2025-06-21T21:31:49 NPT" duration-ms="3656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testValidLogin(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@185a6e9]" started-at="2025-06-20T22:14:04 NPT" name="testValidLogin" data-provider="LoginData" finished-at="2025-06-20T22:14:06 NPT" duration-ms="1015" status="PASS">
+        <test-method signature="testValidLogin(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@79079097]" started-at="2025-06-21T21:31:49 NPT" name="testValidLogin" data-provider="LoginData" finished-at="2025-06-21T21:31:50 NPT" duration-ms="1026" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,15 +58,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@185a6e9]" started-at="2025-06-20T22:14:06 NPT" name="tearDown" finished-at="2025-06-20T22:14:06 NPT" duration-ms="296" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:test.LoginTest@79079097]" started-at="2025-06-21T21:31:50 NPT" name="tearDown" finished-at="2025-06-21T21:31:50 NPT" duration-ms="324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=LoginTest.testValidLogin(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@79079097] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginTest@185a6e9]" started-at="2025-06-20T22:14:06 NPT" name="setUp" finished-at="2025-06-20T22:14:09 NPT" duration-ms="3021" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginTest@79079097]" started-at="2025-06-21T21:31:50 NPT" name="setUp" finished-at="2025-06-21T21:31:54 NPT" duration-ms="3191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testValidLogin(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@185a6e9]" started-at="2025-06-20T22:14:09 NPT" name="testValidLogin" data-provider="LoginData" finished-at="2025-06-20T22:14:10 NPT" duration-ms="1072" status="PASS">
+        <test-method signature="testValidLogin(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@79079097]" started-at="2025-06-21T21:31:54 NPT" name="testValidLogin" data-provider="LoginData" finished-at="2025-06-21T21:31:55 NPT" duration-ms="963" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,7 +89,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@185a6e9]" started-at="2025-06-20T22:14:10 NPT" name="tearDown" finished-at="2025-06-20T22:14:10 NPT" duration-ms="305" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:test.LoginTest@79079097]" started-at="2025-06-21T21:31:55 NPT" name="tearDown" finished-at="2025-06-21T21:31:55 NPT" duration-ms="273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=LoginTest.testValidLogin(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@79079097] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

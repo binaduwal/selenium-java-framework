@@ -5,11 +5,13 @@ package test;
 import java.io.IOException;
 
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pages.LoginPage;
 import utils.ExcelUtils;
+import utils.ExtentReportManager;
 import utils.Log;
 
 
@@ -39,15 +41,44 @@ public class LoginTest extends BaseTest{
 	
 	}
 	
+	@DataProvider(name="LoginData2")
+	public Object[][] getData()
+			{
+				return new Object[][] {
+					{"user1","pass1"},
+					{"user2","pass2"},
+					{"user3","pass3"},
+					
+			};		
+			}
+	
+	
+//	@Test
+//	@Parameters({"username","password"})
+//	public void testValidLogin(String username,String password) {
+//	Log.info("Starting Login test...");
+//		LoginPage loginPage=new LoginPage(driver);	
+//		
+//		Log.info("Adding Credentials");
+//		loginPage.enterUsername(username);
+//		loginPage.enterPassword(password);
+//		loginPage.clickLogin();
+//	}
+	
 	@Test(dataProvider = "LoginData")
-	public void testValidLogin(String username,String password) {
-	Log.info("Starting Login test...");
-		LoginPage loginPage=new LoginPage(driver);	
-		
-		Log.info("Adding Credentials");
-		loginPage.enterUsername(username);
-		loginPage.enterPassword(password);
-		loginPage.clickLogin();
+	public void testValidLogin(String username, String password) {
+	    ExtentReportManager.createTest("Login Test with user: " + username);
+	    Log.info("Starting Login test...");
+	    
+	    LoginPage loginPage = new LoginPage(driver);	
+	    
+	    Log.info("Adding Credentials");
+	    loginPage.enterUsername(username);
+	    loginPage.enterPassword(password);
+	    loginPage.clickLogin();
+
+	    ExtentReportManager.getTest().info("Login attempted with: " + username);
 	}
+
 
 }
